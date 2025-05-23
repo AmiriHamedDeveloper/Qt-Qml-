@@ -29,6 +29,11 @@ Window {
                 root.title = 'Changed!'
                 mylbl.text = 'Changed!'
             }
+
+            onDoubleClicked: {
+                root.title = 'Hello World!'
+                mylbl.text = 'Hello World!'
+            }
         }
 
     }
