@@ -1,5 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
+import QtQuick.Controls 2.12
 
 Window {
     id: root
@@ -26,7 +27,20 @@ Window {
 
             onClicked: {
                 root.title = 'Changed!'
+                mylbl.text = 'Changed!'
             }
         }
+
+    }
+
+    Label{
+        id: mylbl
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: 8
+
+        text: 'Hello, World!'
+        color:'Blue'
+        font.pointSize: 22
     }
 }
